@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Copa de Programación - Score</title>
+</head>
+<body>
+  <div class="container text-center">
+    <h2>Copa de Programación UFPS</h2>
+    <h4 class="text-right">Powered By UFPS Training Center</h4>
+    <hr>
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
+      <a href="#score" class="btn">Scoreboard</a>
+      <a href="#rules" class="btn">Reglas</a>
+      <a href="#contests" class="btn">Competencias</a>
+    </div>
+    <hr>
+    <a name="score"></a>
+    <br>
+    <table class="table table-hover table-stripped">
+      <thead>
+        <tr>
+          <td>Posición</td>
+          <td>Nombre</td>
+          <td>Puntos</td>
+          <td>Problemas</td>
+          <td>Penalización</td>
+        </tr>
+      </thead>
+      <tbody id="score">
+      </tbody>
+    </table>
+    <a name="rules"></a>
+    <h2>Reglas</h2>
+    <hr>
+    <p>Cada competencia aporta 8 puntos al ganador, 6 al segundo puesto, y 5 al tercero. Para los demás participantes se dividen en cuartiles, donde el primer cuartil recibe 4 puntos, el siguiente 3, el siguiente 2, y el último 1. Quien resuelve antes que los demás competidores un ejercicio recibe un punto adicional (si es el primer ejercicio de la competencia, este bono es doble). Participantes con los mismos puntos desempatan por número de problemas resueltos, y los empates en problemas resueltos se desempatan por la penalización.</p>
+
+    <a name="contests"></a>
+    <h2>Competencias</h2>
+    <hr>
+    <p>Los resultados de las competencias llevadas a cabo hasta el momento pueden verse en (resultados privados, solo para los participantes):</p>
+    <ul>
+      <li><a href="http://ufpstrainingcenter.com/maraton/38">Competencia 1</a></li>
+      <li><a href="http://ufpstrainingcenter.com/maraton/39">Competencia 2</a></li>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
