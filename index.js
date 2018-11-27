@@ -81,10 +81,10 @@ function calcularContests () {
       else if (k === 0) agregarPuntaje(contest[k], 8)
       else if (k === 1) agregarPuntaje(contest[k], 6)
       else if (k === 2) agregarPuntaje(contest[k], 5)
-      else if (cuartil === 1) agregarPuntaje(contest[k], 4)
-      else if (cuartil === 2) agregarPuntaje(contest[k], 3)
+      else if (cuartil === 4 || contest[k].problemas === 0) agregarPuntaje(contest[k], 1)
       else if (cuartil === 3) agregarPuntaje(contest[k], 2)
-      else if (cuartil === 4) agregarPuntaje(contest[k], 1)
+      else if (cuartil === 2) agregarPuntaje(contest[k], 3)
+      else if (cuartil === 1) agregarPuntaje(contest[k], 4)
     }
   }
 
@@ -94,7 +94,6 @@ function calcularContests () {
     else if (p1.penalizacion !== p2.penalizacion) return p1.penalizacion - p2.penalizacion
     else return 0
   })
-  console.log(scoreFinal)
   desplegar()
 }
 
