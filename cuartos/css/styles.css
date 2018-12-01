@@ -1,0 +1,94 @@
+html, body {
+  height: 100%;
+  background-color: #ecf0f1;
+}
+
+.table-training {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table-training thead tr th{
+  background-color: #e74c3c;
+  color: white;
+}
+tr:nth-child(2n+1) {
+  background-color: #FFF;
+}
+tr:nth-child(2n) {
+  background-color: #eceeee;
+}
+.table-training thead th {
+  height: 20px;
+}
+
+.bombillo-ac, .bombillo-wa {
+  background-image: url('../img/score-light.png');
+  border-right: 1px solid #FFF;
+  margin: auto;
+  width: 32px;
+  height: 35px;
+}
+tr:nth-child(2n) .bombillo-ac,
+tr:nth-child(2n) .bombillo-wa {
+  background-image: url('../img/score-bg.png')!important;
+  border-right: 1px solid #eceeee;
+}
+.bombillo-ac {
+  background-color: #e74c3c;
+}
+.bombillo-wa {
+  background-color: #999;
+}
+
+td:nth-child(1), th:nth-child(1) {
+  text-align: center;
+  width: 5%!important;
+}
+th, td:nth-child(1), td:nth-child(2), td:nth-child(10) {
+  padding: 14px!important;
+}
+td:nth-child(1), th:nth-child(1) {
+  width: 15%!important;
+}
+th, td {
+  width: 10%;
+  text-align: center;
+}
+td:nth-child(2), th:nth-child(2) {
+  text-align: left;
+}
+.table-training tbody tr td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  height: 60px;
+}
+
+.table-training tr th,
+.table-training tr td,
+.table-training tr {
+  border: none;
+  border-color: #FFF;
+}
+
+.bg-ac, .bg-wa {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  color: #FFF;
+  box-sizing: border-box;
+  padding-top: 35%;
+  font-size: 26px;
+}
+
+.bg-wa {
+  background-color: #999;
+}
+.bg-ac {
+  background-color: #e74c3c;
+}
+
+a {
+  color: #e74c3c;
+}
